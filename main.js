@@ -61,7 +61,7 @@ Thumbnail.prototype.ensureThumbnail = function ensureThumbnail(filename, width, 
   if (height) { wxh = 'x'+height; }
   if (width) { wxh = width + wxh; }
 
-  var thumbFilename = path.basename(filename, extension)+'-'+wxh+extension;
+  var thumbFilename = path.basename(filename, extension);
 
   var that = this;
 
